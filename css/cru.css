@@ -1,0 +1,53 @@
+body {
+	background-color: #F7F7F7;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {height: 44px; float: left; padding-right: 20px;}
+
+#header {width: 100%; padding: 11px 0; background-color: #ffffff; border-top: 2px solid #F9B625;}
+
+.megamenu {padding-top: 14px;}
+
+
+.megamenu > li > a {
+    display: block;
+    font-size: 15px;
+    outline: 0 none;
+    padding: 16px 10px 10px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.megamenu > li > a:hover {
+	padding-bottom: 13px
+}
+
+.megamenu_light_bar .megamenu > li:hover, 
+.megamenu_light_bar .megamenu > li.active {
+	background-color: #ffffff;
+    border: 1px solid #F7F7F7;
+    border-bottom: none;
+    text-shadow: 1px 1px 1px #FFFFFF;
+	}
+
+.megamenu_light_bar .megamenu > li > a {
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+}
+
+.megamenu_light_bar .megamenu > li > a:hover {
+    background-color: #ffffff;
+    border: 1px solid #F7F7F7;
+    border-bottom: none;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.megamenu_light .megamenu li .dropdown_container, .megamenu_light .megamenu li .dropdown_fullwidth, .megamenu_light .megamenu li .dropdown_flyout li ul {
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #F9B625;
+    color: #212121;
+    border-radius: 0;
+}
