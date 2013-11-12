@@ -1,0 +1,255 @@
+@import "skeleton";
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+	background-color: #F7F7F7;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	padding-top: 67px;
+	
+	
+	&:before {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 61px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	}
+}
+
+.site-nav, .right-nav{
+	margin-bottom: 0;
+}
+
+.accessibility, .visuallyhidden {
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+}
+
+.site-header{
+	position: fixed;
+	top: 0;
+	z-index: 505;
+	width: 100%;
+	height: 100%;
+	max-height: 67px;
+	border-top: 4px;
+	border-top-style: solid;
+	border-top-color: #f9b625;
+}
+
+.head-wrapper{
+	top: -1px;
+	position: absolute;
+	z-index: 500;
+	width: 100%;
+	height: 64px;
+	max-height: 100%;
+	background: white;
+	-webkit-box-shadow: 0 1px 1px rgba(6,8,8,0.1);
+}
+
+.site-header a, .navigation-wrapper a{
+	display: inline-block;
+	padding: 0 18px;
+	color: #3a3a3a;
+	height: 64px;
+	line-height: 70px;
+	max-height: 100%;
+	vertical-align: middle;
+	@include vendor(transition, all 0.25s ease-in-out);
+	
+	&:hover{
+		background-color: #f7f7f7;
+	}
+	
+}
+
+.site-nav a{
+	font-weight: 500;
+	font-size: 15px;
+	height: 64px;
+	line-height: 70px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: none;
+	@include vendor(transition, all 0.25s ease-in-out);
+}
+
+#nav{
+	height: 63px;
+	vertical-align: middle;
+	position: fixed;
+	z-index: 505;
+	top: 0;
+	left: 10%;
+	right: 0.75em;
+	width: 90%;
+	top: 3px;
+}
+
+.navigation-wrapper{
+	float: right;
+	width: 100%;
+	height: 64px;
+	
+	li a:hover{
+		background-color: #f7f7f7;
+		color: #2c9ab7;
+		text-decoration: none;
+	}
+}
+
+.title-group{
+	margin: 0;
+}
+
+.site-logo{
+	width: 10%;
+	height: 64px;
+	line-height: 64px;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	
+	a {
+		height: 55px;
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+	}
+	
+	h1 {
+		width: 70px;
+		height: 55px;
+		background: url("../images/cru-logo.png");
+		background-image: url("../images/cru-logo.svg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		margin: 0;
+	}
+}
+
+
+.right-nav{
+	float: right;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	
+	@media (min-width: 46.9375em){
+		width: 16%;
+	}
+	@media (min-width: 980px){
+		width: 35%;
+	}
+	
+	li{
+		display: inline-block;
+	}
+}
+
+.site-nav{
+	float: left;
+	
+	@media (min-width: 46.9375em){
+		display: inline-block;
+		width: 84%;
+	}
+	
+	@media (min-width: 980px){
+		width: 65%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.dropdown{
+	
+	
+}
+
+.nav{
+	ul, ol{
+		margin-left: 0;
+	}
+}
+
+.js .nav li .dropdown { 	
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 0px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0;
+	width: 0px !important; 
+} 
+
+/* JS disabled styles */  
+.js .nav li:hover .dropdown {
+	border: auto !important;
+	clip: auto !important;
+	height: auto !important; 
+	padding: 30px;
+	margin: 0 auto;
+	width: 100% !important;
+	position: fixed;
+	//top: 67px;
+	left: 0;
+	z-index: -1;
+	//white-space: nowrap;
+	background-color: #f7f7f7;
+	border-bottom: 4px solid #ffffff;
+	-webkit-box-shadow: 0 1px 1px rgba(6,8,8,0.1);
+	@include vendor(transition, max-height 2s ease-in-out);
+}  
+
+
+
+#header {display:none;}
+
+
+
+
+.megamenu_light_bar .megamenu > li:hover, 
+.megamenu_light_bar .megamenu > li.active {
+	background-color: #ffffff;
+    border: 1px solid #F7F7F7;
+    border-bottom: none;
+    text-shadow: 1px 1px 1px #FFFFFF;
+	}
+
+
+.megamenu_light_bar .megamenu > li > a:hover {
+    background-color: #ffffff;
+    border: 1px solid #F7F7F7;
+    border-bottom: none;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.megamenu_light .megamenu li .dropdown_container, .megamenu_light .megamenu li .dropdown_fullwidth, .megamenu_light .megamenu li .dropdown_flyout li ul {
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #F9B625;
+    color: #212121;
+    border-radius: 0;
+}
+
+  
