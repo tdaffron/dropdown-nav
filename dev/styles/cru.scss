@@ -1,4 +1,4 @@
-@import "skeleton";
+@import "skeleton.css/skeleton";
 
 *, *:before, *:after {
 -webkit-box-sizing: border-box;
@@ -182,7 +182,13 @@ body {
 }
 
 .dropdown{
-	
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 0px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0;
+	width: 0px !important; 
 	
 }
 
