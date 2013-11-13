@@ -1,0 +1,63 @@
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;
+	font-style: $header-font-style;
+	color: $header-font-color;
+	text-rendering: $header-text-rendering;
+	line-height: $header-line-height - 0.1;
+
+	small {
+		font-size: $small-font-size;
+		color: $small-font-color;
+		line-height: 0;
+	}
+	
+	@media (min-width: 768px){
+		line-height: $header-line-height;
+	}
+}
+
+h1 { 
+	font-size: $h1-font-size - 10px;
+	font-size: $h1-font-calc - rem-calc(10); 
+	
+	@media (min-width: 768px) {
+		@include rem-font($h1-font-calc);
+	}
+}
+
+h2 { 
+	font-size: $h2-font-size - 10px;
+	font-size: $h2-font-calc - rem-calc(10); 
+	@media (min-width: 768px) {
+		@include rem-font($h2-font-calc);		
+	}
+	 
+}
+
+h3 { 
+	font-size: $h3-font-size - 5px;
+	font-size: $h3-font-calc - rem-calc(5); 
+	@media (min-width: 768px) {
+		@include rem-font($h3-font-calc);
+	}
+}
+
+h4 { 
+	font-size: $h4-font-size - 5px;
+	font-size: $h4-font-calc - rem-calc(5); 
+	@media (min-width: 768px) {
+		@include rem-font($h4-font-calc);
+	}
+}
+
+h5 { 
+	@include rem-font($h5-font-calc);
+}
+
+h6 { 
+	@include rem-font($h6-font-calc);
+}
+
+.subheader { @extend %subheader; }
