@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8376",
+  "creatorBuild" : "8403",
   "files" : {
     "\/dev\/styles\/skeleton.css\/generic\/_clearfix.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -70,18 +70,6 @@
       "initialSize" : 1035,
       "fileType" : 8192
     },
-    "\/dev\/styles\/skeleton.css\/_defaults.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/_defaults.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_defaults.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/dev\/styles\/skeleton.css\/generic\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -91,6 +79,18 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/assets\/styles\/_mixins.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/dev\/styles\/skeleton.css\/_defaults.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/_defaults.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_defaults.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -240,6 +240,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/dev\/styles\/skeleton.css\/core\/_forms.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_forms.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_forms.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/dev\/styles\/skeleton.css\/resets\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -249,18 +261,6 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/assets\/styles\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/dev\/styles\/skeleton.css\/core\/_buttons.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_buttons.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_buttons.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -287,15 +287,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/styles\/skeleton.css\/core\/_forms.scss" : {
+    "\/dev\/styles\/skeleton.css\/core\/_buttons.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_forms.scss",
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_buttons.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_forms.css",
+      "outputAbbreviatedPath" : "\/assets\/styles\/_buttons.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -434,18 +434,6 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.js",
       "fileType" : 64
     },
-    "\/dev\/styles\/skeleton.css\/core\/_images.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_images.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_images.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/assets\/images\/right-b.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -467,6 +455,18 @@
       "outputAbbreviatedPath" : "\/assets\/images\/icons\/social-icons.png",
       "initialSize" : 43890,
       "fileType" : 8192
+    },
+    "\/dev\/styles\/skeleton.css\/core\/_images.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_images.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_images.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/dev\/styles\/skeleton.css\/components\/_black-list.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -503,6 +503,17 @@
       "initialSize" : 1031,
       "fileType" : 8192
     },
+    "\/dev\/scripts\/main.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/scripts\/main.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.js",
+      "fileType" : 64
+    },
     "\/dev\/styles\/skeleton.css\/core\/_lists.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -525,6 +536,17 @@
       "outputAbbreviatedPath" : "\/assets\/images\/img02.jpg",
       "initialSize" : 4393,
       "fileType" : 4096
+    },
+    "\/assets\/scripts\/main.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/scripts\/main.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.min.js",
+      "fileType" : 64
     },
     "\/assets\/images\/cru-logo.png" : {
       "ignoreWasSetByUser" : 0,
