@@ -25,6 +25,18 @@
       "initialSize" : 4393,
       "fileType" : 4096
     },
+    "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_crubrand.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/assets\/scripts\/modernizr.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -34,6 +46,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.min.js",
+      "fileType" : 64
+    },
+    "\/assets\/scripts\/jquery.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.min.js",
       "fileType" : 64
     },
     "\/assets\/images\/dropdown-up.png" : {
@@ -147,6 +170,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/assets\/images\/img06.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/img06.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/img06.jpg",
+      "initialSize" : 4393,
+      "fileType" : 4096
+    },
     "\/dev\/styles\/skeleton.css\/core\/_grids.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -159,16 +193,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/assets\/images\/img06.jpg" : {
+    "\/assets\/scripts\/megamenu_plugins.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/img06.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/img06.jpg",
-      "initialSize" : 4393,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/assets\/scripts\/megamenu_plugins.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu_plugins.min.min.js",
+      "fileType" : 64
     },
     "\/dev\/styles\/skeleton.css\/components\/_panels.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -193,6 +227,18 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.js",
       "fileType" : 64
     },
+    "\/dev\/styles\/screen.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/screen.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/screen.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/dev\/scripts\/megamenu.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -208,7 +254,7 @@
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
+      "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/dev\/styles\/cru.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
@@ -240,18 +286,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/styles\/skeleton.css\/core\/_forms.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_forms.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_forms.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/dev\/styles\/skeleton.css\/resets\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -261,6 +295,18 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/assets\/styles\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/dev\/styles\/skeleton.css\/core\/_buttons.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_buttons.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_buttons.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -287,17 +333,28 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/styles\/skeleton.css\/core\/_buttons.scss" : {
+    "\/dev\/styles\/skeleton.css\/core\/_forms.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_buttons.scss",
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_forms.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_buttons.css",
+      "outputAbbreviatedPath" : "\/assets\/styles\/_forms.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/assets\/scripts\/megamenu.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/scripts\/megamenu.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu.min.min.js",
+      "fileType" : 64
     },
     "\/assets\/images\/icons\/mini-icons-black.png" : {
       "ignoreWasSetByUser" : 0,
@@ -364,6 +421,18 @@
       "inputAbbreviatedPath" : "\/assets\/styles\/cru.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/dev\/styles\/ui\/cru-brand\/_fonts.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/ui\/cru-brand\/_fonts.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_fonts.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/dev\/styles\/skeleton.css\/core\/_scaffolding.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -434,6 +503,27 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.js",
       "fileType" : 64
     },
+    "\/assets\/styles\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/styles\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/dev\/styles\/skeleton.css\/core\/_images.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_images.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_images.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/assets\/images\/right-b.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -455,18 +545,6 @@
       "outputAbbreviatedPath" : "\/assets\/images\/icons\/social-icons.png",
       "initialSize" : 43890,
       "fileType" : 8192
-    },
-    "\/dev\/styles\/skeleton.css\/core\/_images.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/core\/_images.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_images.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/dev\/styles\/skeleton.css\/components\/_black-list.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -514,6 +592,18 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.js",
       "fileType" : 64
     },
+    "\/dev\/styles\/ui\/_off-canvas.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/styles\/ui\/_off-canvas.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_off-canvas.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/dev\/styles\/skeleton.css\/core\/_lists.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -548,6 +638,17 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.min.js",
       "fileType" : 64
     },
+    "\/assets\/scripts\/megamenu.min.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/scripts\/megamenu.min.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu.min.min.min.js",
+      "fileType" : 64
+    },
     "\/assets\/images\/cru-logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -559,15 +660,15 @@
       "initialSize" : 2783,
       "fileType" : 8192
     },
-    "\/dev\/styles\/skeleton.css\/generic\/_brand.scss" : {
+    "\/dev\/styles\/skeleton.css\/_skeleton.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/generic\/_brand.scss",
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/_skeleton.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_brand.css",
+      "outputAbbreviatedPath" : "\/assets\/styles\/_skeleton.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -583,28 +684,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/styles\/skeleton.css\/_skeleton.scss" : {
+    "\/dev\/styles\/skeleton.css\/generic\/_brand.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/_skeleton.scss",
+      "inputAbbreviatedPath" : "\/dev\/styles\/skeleton.css\/generic\/_brand.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_skeleton.css",
+      "outputAbbreviatedPath" : "\/assets\/styles\/_brand.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/dev\/scripts\/megamenu_plugins.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/scripts\/megamenu_plugins.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu_plugins.min.js",
-      "fileType" : 64
     },
     "\/assets\/images\/dropdown.png" : {
       "ignoreWasSetByUser" : 0,
@@ -616,6 +706,17 @@
       "outputAbbreviatedPath" : "\/assets\/images\/dropdown.png",
       "initialSize" : 1039,
       "fileType" : 8192
+    },
+    "\/dev\/scripts\/megamenu_plugins.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/scripts\/megamenu_plugins.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu_plugins.min.js",
+      "fileType" : 64
     },
     "\/assets\/images\/icons\/mini-icons-white.png" : {
       "ignoreWasSetByUser" : 0,
