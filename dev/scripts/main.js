@@ -129,11 +129,8 @@
             // close nav by touching the partial off-screen content
             document.addEventListener('click', function(e)
             {
-<<<<<<< HEAD
                 if (nav_open && !hasParent(e.target, 'flyout')) {
-=======
-                if (nav_open && !hasParent(e.target, 'nav')) {
->>>>>>> 56fb8b39cdea59279dd8d5dcabcd8a6ffdda2139
+
                     e.preventDefault();
                     app.closeNav();
                 }

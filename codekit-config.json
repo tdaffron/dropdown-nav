@@ -25,17 +25,16 @@
       "initialSize" : 4393,
       "fileType" : 4096
     },
-    "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss" : {
+    "\/assets\/scripts\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/styles\/_crubrand.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.min.js",
+      "fileType" : 64
     },
     "\/assets\/scripts\/modernizr.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -48,16 +47,17 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.min.js",
       "fileType" : 64
     },
-    "\/assets\/scripts\/jquery.min.js" : {
+    "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/jquery.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/dev\/styles\/ui\/cru-brand\/_crubrand.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/styles\/_crubrand.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/assets\/images\/dropdown-up.png" : {
       "ignoreWasSetByUser" : 0,
@@ -627,17 +627,6 @@
       "initialSize" : 4393,
       "fileType" : 4096
     },
-    "\/assets\/scripts\/main.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/scripts\/main.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.min.js",
-      "fileType" : 64
-    },
     "\/assets\/scripts\/megamenu.min.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -647,6 +636,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu.min.min.min.js",
+      "fileType" : 64
+    },
+    "\/assets\/scripts\/main.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/scripts\/main.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/main.min.min.js",
       "fileType" : 64
     },
     "\/assets\/images\/cru-logo.png" : {
@@ -696,17 +696,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/assets\/images\/dropdown.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/dropdown.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/dropdown.png",
-      "initialSize" : 1039,
-      "fileType" : 8192
-    },
     "\/dev\/scripts\/megamenu_plugins.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -717,6 +706,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/scripts\/megamenu_plugins.min.js",
       "fileType" : 64
+    },
+    "\/assets\/images\/dropdown.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/dropdown.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/dropdown.png",
+      "initialSize" : 1039,
+      "fileType" : 8192
     },
     "\/assets\/images\/icons\/mini-icons-white.png" : {
       "ignoreWasSetByUser" : 0,
