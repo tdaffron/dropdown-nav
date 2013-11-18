@@ -3,17 +3,17 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-	padding-top: 67px;
+	padding-top: 64px;
 	
 	
 	&:before {
-	content: " ";
-	display: block;
-	width: 100%;
-	height: 61px;
-	top: 0;
-	left: 0;
-	position: absolute;
+		content: " ";
+		display: block;
+		width: 100%;
+		height: 64px;
+		top: 0;
+		left: 0;
+		position: absolute;
 	}
 }
 
@@ -35,67 +35,75 @@ body {
 	z-index: 505;
 	width: 100%;
 	height: 100%;
-	max-height: 67px;
+	max-height: 68px;
 	border-top: 4px;
 	border-top-style: solid;
 	border-top-color: $cru-gold;
 }
 
+.bg-white{
+	position: absolute;
+	height: inherit;
+	background: #ffffff;
+	width: 100%;
+}
+
 .navigation-wrapper{
 	position: absolute;
-	top: -1px;
-	overflow: hidden;
+	//overflow: hidden;
 	width: 100%;
 	height: 64px;
 	max-height: 100%;
-	background: #ffffff;
+	z-index: 500;
 	
 	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
 }
 
-.title-group{
-	margin: 0;
-	float: left;
-	width: 10%;
-	height: 64px;
-	line-height: 64px;
-	vertical-align: middle;
-	text-align: center;
-	display: inline-block;
+.small-wrap{
+	min-width: 980px;
 }
 
-	.site-logo{
-		a {
-			height: 55px;
-			display: inline-block;
-			overflow: hidden;
-			vertical-align: middle;
-		}
+.title-group{
+	margin: 0;
+	display: inline-block;
+	float: none;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	vertical-align: middle;
+	width: 11%;
 	
-		h1 {
+	
+	a {
+		height: 55px;
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+		background: none transparent scroll repeat 0 0;
+		
+	}
+}
+
+		.site-logo {
 			width: 70px;
-			height: 55px;
-			background: url("../images/cru-logo.png");
+			height: 55px;			
 			background-image: url("../images/cru-logo.svg");
 			background-repeat: no-repeat;
 			background-position: top center;
-			background-size: contain;
+			//background-size: contain;
 			margin: 0;
 		}
-	}
 
 
 .navigation{
-	//float: right;
-	width: 90%;
 	display: inline-block;
-	@media screen and (min-width: 61.25em){
-		height: 64px;
-		vertical-align: middle;
-	}
+	float: none;
+	width: 89%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-	.site-nav > li  a, .right-nav > li  a,  .topbar-toggle, .topbar-search{
+	.site-nav > li > a, .right-nav > li > a,  .topbar-toggle, .topbar-search{
 		display: inline-block;
 		padding: 0 18px;
 		
@@ -104,7 +112,7 @@ body {
 		font-size: 15px;
 				
 		height: 64px;
-		line-height: 70px;
+		line-height: 64px;
 		max-height: 100%;
 		vertical-align: middle;
 		
@@ -124,49 +132,35 @@ body {
 		display: inline-block;
 		vertical-align: middle;
 		margin-bottom: 0;
-		width: 100%;
-		
-		@media screen and (min-width: 61.25em){
-			width: 34%;
-		}
+		width: 34%;
 	
-		li{
+		& > li{
 			display: inline-block;
+			padding: 0;
 		}
 	}
 	
 		.right-nav > li a{
-			display: none;
+			display: inline-block;
 			font-size: 12px;
 			font-size: 1.2rem;
 		
-			@media screen and (min-width: 61.25em){
-				display: inline-block;
-			}
-		
-			@media screen and (min-width: 65em){
-					font-size: 15px;
-					font-size: 1.5rem;
+			@media screen and (min-width: 65.25em){
+				font-size: 15px;
+				font-size: 1.5rem;
 			}
 		}
 
 	.site-nav{
-		float: left;
+		float: none;
 		margin-bottom: 0;
-		display: none;
-		
-	
-		@media screen and (min-width: 61.25em){
-			width: 66%;
-			display: inline-block;
-			vertical-align: middle;
-		}
+		width: 66%;
+		display: inline-block;
+		vertical-align: middle;
 	}
 	
 	.topbar-toggle{
-		@media screen and (min-width: 61.25em){
-			display: none;
-		}
+		display: none;
 	}
 
 .accessibility, .visuallyhidden {
@@ -180,39 +174,70 @@ body {
 	width: 1px !important;
 }
 
-.js .nav li .dropdown { 	
-	border: 0 !important;
-	clip: rect(0 0 0 0) !important;
-	height: 0px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0;
-	width: 0px !important; 
-} 
+.nav li .dropdown { 
+	position: fixed;
+	left: 0;
+	background-color: $dark-gray;
+	color: #ffffff;
+	width: 100% !important;
+	overflow: hidden;
+	max-height: 0;
+	height: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	/* Hover Off */
+	@include vendor(transition, max-height,padding .15s ease);
+	
+	//@include vendor(transform, translate3d(0, -160%, 0));
+	//@include vendor(backface-visibility, hidden);
+	//@include vendor(perspective, 1000);
+	
+	h2, h3, h4{
+		color: #ffffff;
+		
+	}
+}
 
+.site-nav > li{
+	position: relative;
+}
 
-.dropdown__item:hover a{
-	//background-color: #f7f7f7;
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid $dark-gray;
+	position: absolute;
+	left: 44%;
+	bottom: 0px;
+	display: none;
+	
+	@include vendor(transition, display .25s ease);
 	
 }
 
-/* JS disabled styles */  
-.js .nav li:hover > .dropdown {
-	border: auto !important;
-	clip: auto !important;
-	height: auto !important; 
-	padding: 30px;
-	margin: 0 auto;
-	width: 100% !important;
-	position: fixed;
-	left: 0;
-	z-index: -1;
-	background-color: #ffffff;
-	//border-bottom: 4px solid #ffffff;
-	border-top: 2px solid #f7f7f7;
-	-webkit-box-shadow: 0 1px 1px rgba(6,8,8,0.1);
+.no-csstransitions .nav li .dropdown{
+	height: 0;
+}
+
+.nav li:hover > .arrow-up {
+	display: block;
+}
+
+.nav li:hover > .dropdown {	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	//border-top: 2px solid #f7f7f7;
+	max-height: 100%;
+	height: auto;
+	
 	@include vendor(box-shadow,  0 1px 1px rgba(6,8,8,0.1));
-	@include vendor(transition, max-height 2s ease-in-out);
+	
+	/* Hover On */
+	@include vendor(transition, max-height,padding .25s ease);
 }  
 
 
