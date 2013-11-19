@@ -123,6 +123,10 @@
 		padding-bottom: 20px;
 		padding-right: 10px;
 		padding-left: 0;
+		border: 1px solid #ffffff;
+		margin-bottom: $base-spacing-unit / 2;
+		margin-bottom: rem-calc($base-spacing-unit) / 2;
+		text-align: center;
 		
 	}
 }

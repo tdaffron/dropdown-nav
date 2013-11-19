@@ -2904,4 +2904,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 10px;
-  padding-left: 0; }
+  padding-left: 0;
+  border: 1px solid #ffffff;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+  text-align: center; }
