@@ -1,6 +1,6 @@
 */codekit-config.json
 **/.DS_Store
-.sass-cache
+.sass-cache/
 .sass-cache/*
 
 ### OSX

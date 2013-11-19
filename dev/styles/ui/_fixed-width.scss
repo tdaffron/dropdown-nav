@@ -1,0 +1,128 @@
+.bg-white{
+	position: absolute;
+	height: inherit;
+	background: #ffffff;
+	width: 100%;
+	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
+	
+}
+
+.navigation-wrapper{
+	position: relative;
+	//overflow: hidden;
+	height: 64px;
+	max-height: 100%;
+	z-index: 500;
+	@include vendor(box-shadow, none);
+	
+}
+
+.small-wrap{
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.title-group{
+	width: 89.09px;
+	
+	
+	a {
+		height: 55px;
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+		background: none transparent scroll repeat 0 0;
+		
+	}
+}
+
+		.site-logo {
+			width: 70px;
+			height: 55px;			
+			background-image: url("../images/cru-logo.svg");
+			background-repeat: no-repeat;
+			background-position: top center;
+			//background-size: contain;
+			margin: 0;
+		}
+
+
+.navigation{
+	display: inline-block;
+	float: none;
+	width: 89%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+	.site-nav > li > a, .right-nav > li > a,  .topbar-toggle, .topbar-search{
+		display: inline-block;
+		padding: 0 18px;
+		
+		color: #3a3a3a;
+		font-weight: 500;
+		font-size: 15px;
+				
+		height: 64px;
+		line-height: 64px;
+		max-height: 100%;
+		vertical-align: middle;
+		
+		@include vendor(transition, all 0.25s ease-in-out);
+	
+		&:hover{
+			background-color: #f7f7f7;
+			color: $cru-gold;
+			text-decoration: none;
+		}
+	
+	}
+
+	.right-nav{
+		float: right;
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+		width: 34%;
+	
+		& > li{
+			display: inline-block;
+			padding: 0;
+		}
+	}
+	
+		.right-nav > li a{
+			display: inline-block;
+			font-size: 12px;
+			font-size: 1.2rem;
+		
+			@media screen and (min-width: 65.25em){
+				font-size: 15px;
+				font-size: 1.5rem;
+			}
+		}
+
+	.site-nav{
+		float: none;
+		margin-bottom: 0;
+		width: 66%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.topbar-toggle{
+		display: none;
+	}
+	
+.dropdown--column{
+	a{
+		display: inline-block;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 10px;
+		padding-left: 0;
+		
+	}
+}
