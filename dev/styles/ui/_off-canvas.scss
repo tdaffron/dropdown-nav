@@ -108,8 +108,9 @@ body {
 		padding: 0 18px;
 		
 		color: #3a3a3a;
-		font-weight: 500;
+		font-weight: 300;
 		font-size: 15px;
+		letter-spacing: 0.9px;
 				
 		height: 64px;
 		line-height: 64px;
@@ -124,6 +125,10 @@ body {
 			text-decoration: none;
 		}
 	
+	}
+	
+	.right-nav > li > a{
+		font-weight: 400;
 	}
 
 	.right-nav{
@@ -140,15 +145,17 @@ body {
 		}
 	}
 	
-		.right-nav > li a{
+		.right-nav > li > a{
 			display: inline-block;
 			font-size: 12px;
 			font-size: 1.2rem;
 		
+			/*
 			@media screen and (min-width: 65.25em){
 				font-size: 15px;
 				font-size: 1.5rem;
 			}
+			*/
 		}
 
 	.site-nav{

@@ -4,6 +4,12 @@
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 
+
+@import "skeleton.css/defaults";
+@import "skeleton.css/generic/mixins";
+@import "skeleton.css/utilities/utilities";
+
+
 .lt-ie8{
 	.title-group{
 		float: left;
@@ -15,6 +21,11 @@
 	
 	.site-nav{
 		float: left;
+		
+		& > li > a{
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.right-nav{
 		float: right;
@@ -22,6 +33,24 @@
 	
 	.nav > li{
 		display: inline;
+	}
+	
+	.nav li a:hover > .arrow-up {
+		display: block;
+	}
+
+	.nav li a:hover > .dropdown {	
+		padding-top: 30px;
+		padding-bottom: 30px;
+	
+		//border-top: 2px solid #f7f7f7;
+		max-height: 100%;
+		height: auto;
+	
+		@include vendor(box-shadow,  0 1px 1px rgba(6,8,8,0.1));
+	
+		/* Hover On */
+		@include vendor(transition, max-height,padding .25s ease);
 	}
 }
 
