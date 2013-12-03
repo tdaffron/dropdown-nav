@@ -229,8 +229,19 @@ body {
 	height: 0;
 }
 
-.nav li:hover > .arrow-up {
-	display: block;
+
+.js-is-open{
+	&:after{
+			content: '';
+			height: 0px;
+			width: 0px;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid $dark-gray;
+			position: absolute;
+			left: 44%;
+			bottom: 0px;
+	}
 }
 
 .js-dropdown.js-is-open > .dropdown{	
