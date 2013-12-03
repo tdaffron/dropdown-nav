@@ -233,7 +233,7 @@ body {
 	display: block;
 }
 
-.nav li:hover > .dropdown {	
+.nav li:hover > .dropdown, .js-dropdown-active, .on .nav > li .dropdown{	
 	padding-top: 30px;
 	padding-bottom: 30px;
 	
