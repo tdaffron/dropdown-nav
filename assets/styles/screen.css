@@ -2742,7 +2742,7 @@ body {
 .nav li:hover > .arrow-up {
   display: block; }
 
-.nav li:hover > .dropdown, .js-dropdown-active, .on .nav > li .dropdown {
+.js-dropdown.js-is-open > .dropdown {
   padding-top: 30px;
   padding-bottom: 30px;
   max-height: 100%;
@@ -2759,6 +2759,21 @@ body {
   -o-transition: max-height, padding 0.25s ease;
   transition: max-height, padding 0.25s ease; }
 
+/*
+
+.nav li:hover > .dropdown, .js-dropdown-active, .on .nav > li .dropdown{	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	//border-top: 2px solid #f7f7f7;
+	max-height: 100%;
+	height: auto;
+	
+	@include vendor(box-shadow,  0 1px 1px rgba(6,8,8,0.1));
+	
+	@include vendor(transition, max-height,padding .25s ease);
+}  
+*/
 @media screen and (min-width: 61.25em) {
   .js-close-button {
     display: none; } }
