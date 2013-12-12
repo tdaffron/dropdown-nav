@@ -189,12 +189,12 @@ body {
 	width: 100% !important;
 	overflow: hidden;
 	max-height: 0;
-	height: auto;
+	height: 0;
 	padding-left: 30px;
 	padding-right: 30px;
-	
+	opacity: 0;
 	/* Hover Off */
-	@include vendor(transition, max-height,padding .15s ease);
+	@include vendor(transition, max-height .25s ease);
 	@include clearfix();
 	
 	//@include vendor(transform, translate3d(0, -160%, 0));
@@ -205,6 +205,8 @@ body {
 		color: #ffffff;
 		
 	}
+	
+	
 		
 }
 
@@ -269,27 +271,42 @@ body {
 .nav li:hover > .arrow-up {
   display: block; }
 
+
+  .dropdown .small-wrap{
+  	opacity: 0;
+  } 
 .nav li:hover > .dropdown {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  max-height: none;
-  height: auto;
-  overflow: visible;
-  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  /* Hover On */
-  -webkit-transition: max-height, padding 0.25s ease;
-  -moz-transition: max-height, padding 0.25s ease;
-  -ms-transition: max-height, padding 0.25s ease;
-  -o-transition: max-height, padding 0.25s ease;
-  transition: max-height, padding 0.25s ease; 
+  	padding-top: 30px;
+  	padding-bottom: 30px;
+  	max-height: 270px;
+  	height: 270px;
+  	overflow: visible;
+	opacity: 1;
+  
+  	-webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  	-moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  	-ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  	-o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  	box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  	/* Hover On */
+  	/*-webkit-transition: max-height 0.25s ease;*/
+  
+  	@include vendor(transition, all 0.3s 0.2s ease );
+	
+	.small-wrap{
+		opacity: 1;
+	  	@include vendor(transition, all 0.3s 0.3s ease );
+	}
 }
 
-
 .nav li.dropdown__item:hover{
+    &:after{
+		opacity: 1;
+	  	@include vendor(transition, all 0.2s 0.2s ease );
+    }
+}
+
+.nav li.dropdown__item{
     &:after{
   		content:' ';
     	width: 0; 
@@ -300,8 +317,7 @@ body {
     	position: absolute;
     	left: 44%;
     	bottom: 0px;
-	
-    	@include vendor(transition, display .25s ease);
+		opacity: 0;
     }
 }
 
