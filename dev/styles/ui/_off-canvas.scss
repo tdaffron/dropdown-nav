@@ -194,7 +194,7 @@ body {
 	padding-right: 30px;
 	opacity: 0;
 	/* Hover Off */
-	@include vendor(transition, max-height .25s ease);
+  	@include vendor(transition, opacity 0s 0.2s ease-out );
 	@include clearfix();
 	
 	//@include vendor(transform, translate3d(0, -160%, 0));

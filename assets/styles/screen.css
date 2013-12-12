@@ -2714,11 +2714,11 @@ body {
   padding-right: 30px;
   opacity: 0;
   /* Hover Off */
-  -webkit-transition: max-height 0.25s ease;
-  -moz-transition: max-height 0.25s ease;
-  -ms-transition: max-height 0.25s ease;
-  -o-transition: max-height 0.25s ease;
-  transition: max-height 0.25s ease; }
+  -webkit-transition: opacity 0s 0.2s ease-out;
+  -moz-transition: opacity 0s 0.2s ease-out;
+  -ms-transition: opacity 0s 0.2s ease-out;
+  -o-transition: opacity 0s 0.2s ease-out;
+  transition: opacity 0s 0.2s ease-out; }
   .nav li .dropdown:before, .nav li .dropdown:after {
     content: " ";
     /* 1 */
