@@ -2671,7 +2671,10 @@ body {
   width: 34%; }
   .right-nav > li {
     display: inline-block;
-    padding: 0; }
+    padding: 0;
+    position: relative; }
+  .right-nav h3 {
+    text-align: left; }
 
 .right-nav > li > a {
   display: inline-block;
@@ -2727,22 +2730,6 @@ body {
 
 .site-nav > li {
   position: relative; }
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #4c4749;
-  position: absolute;
-  left: 44%;
-  bottom: 0px;
-  display: none;
-  -webkit-transition: display 0.25s ease;
-  -moz-transition: display 0.25s ease;
-  -ms-transition: display 0.25s ease;
-  -o-transition: display 0.25s ease;
-  transition: display 0.25s ease; }
 
 .no-csstransitions .nav li .dropdown {
   height: 0; }
@@ -2814,6 +2801,22 @@ body {
   -o-transition: max-height, padding 0.25s ease;
   transition: max-height, padding 0.25s ease; }
 
+.nav li.dropdown__item:hover:after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #4c4749;
+  position: absolute;
+  left: 44%;
+  bottom: 0px;
+  -webkit-transition: display 0.25s ease;
+  -moz-transition: display 0.25s ease;
+  -ms-transition: display 0.25s ease;
+  -o-transition: display 0.25s ease;
+  transition: display 0.25s ease; }
+
 @media screen and (min-width: 61.25em) {
   .js-close-button {
     display: none; } }
@@ -2881,11 +2884,11 @@ body {
   .is-hidden .nav li > .dropdown {
     height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    -ms-transition: all 0.1s;
-    -o-transition: all 0.1s;
-    transition: all 0.1s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
     visibility: hidden; }
 
 .is-visible {

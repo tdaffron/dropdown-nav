@@ -144,6 +144,11 @@ body {
 		& > li{
 			display: inline-block;
 			padding: 0;
+			position: relative;
+		}
+		
+		h3{
+			text-align: left;
 		}
 	}
 	
@@ -207,20 +212,6 @@ body {
 	position: relative;
 }
 
-.arrow-up {
-	width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid $dark-gray;
-	position: absolute;
-	left: 44%;
-	bottom: 0px;
-	display: none;
-	
-	@include vendor(transition, display .25s ease);
-	
-}
 
 .no-csstransitions .nav li .dropdown{
 	height: 0;
@@ -271,6 +262,7 @@ body {
 
 */
 
+
 .no-csstransitions .nav li .dropdown {
   height: 0; }
 
@@ -296,6 +288,22 @@ body {
   transition: max-height, padding 0.25s ease; 
 }
 
+
+.nav li.dropdown__item:hover{
+    &:after{
+  		content:' ';
+    	width: 0; 
+    	height: 0; 
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-bottom: 10px solid $dark-gray;
+    	position: absolute;
+    	left: 44%;
+    	bottom: 0px;
+	
+    	@include vendor(transition, display .25s ease);
+    }
+}
 
 
 .js-close-button{
@@ -377,7 +385,7 @@ body {
 	.nav li > .dropdown{
 		height: 0;
 		overflow: hidden;
-	    @include vendor(transition, all 0.1s);
+	    @include vendor(transition, all 0s);
 		visibility: hidden;
 		
 	}
