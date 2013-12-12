@@ -341,3 +341,18 @@ body {
 	top: 2.1rem;
 	right: 1.75rem;
 }
+
+.is-hidden, .is-visible{
+    @include vendor(transition, all 0.5s);
+}
+.is-hidden{	
+    -webkit-transform: translateY(-6em);
+    -ms-transform: translateY(-6em);
+    transform: translateY(-6em);
+}
+
+.is-visible {	
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}

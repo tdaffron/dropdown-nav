@@ -2827,6 +2827,23 @@ body {
   top: 2.1rem;
   right: 1.75rem; }
 
+.is-hidden, .is-visible {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.is-hidden {
+  -webkit-transform: translateY(-6em);
+  -ms-transform: translateY(-6em);
+  transform: translateY(-6em); }
+
+.is-visible {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
 .bg-white {
   position: absolute;
   height: inherit;
