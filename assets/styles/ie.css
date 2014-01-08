@@ -1,18 +1,473 @@
+@charset "UTF-8";
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+/**
+ * Default variables. Redefine these in your `_vars.scss` file
+ */
+/* Change the overall browser font: default is 16px */
+/* Do not change two things or things very well may break */
+/* Maintains the 16px default but resets rems so that 1rem = 10px */
+/*------------------------------------*\
+    $BORDER-BOX
+\*------------------------------------*/
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base stuff
+ */
+/**
+ * Base font-family.
+ */
+/**
+ * Default colour for objects’ borders etc.
+ */
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Basic Font Sizes
+ */
+/**
+ * Headings
+ */
+/* Header sizes */
+/* Subheaders */
+/**
+ * Smalls
+ */
+/**
+ * Paragraphs
+ */
+/**
+ * Blockquotes
+ */
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * Brand stuff: The intention is not to impose style but to add asthetic value
+ */
+/**
+ * How big would you like round corners to be by default?
+ */
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/*------------------------------------*\
+    $Messages
+\*------------------------------------*/
+/*------------------------------------*\
+    $Panels
+\*------------------------------------*/
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+/**
+ * Skeleton will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/**
+ * Drop relative positioning into silent classes which can’t take advantage of
+ * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+/**
+ *  Calculates any number of margins and paddings in one swoop
+ * 
+ * Running this is as easy 
+ * @include vertical-calc(1, 12) {}
+ *
+ */
+.mt1, .mtb1 {
+  margin-top: 6px;
+  margin-top: 0.6rem; }
+
+.mb1, .mtb1 {
+  margin-bottom: 6px;
+  margin-bottom: 0.6rem; }
+
+.pt1, .ptb1 {
+  padding-top: 6px;
+  padding-top: 0.6rem; }
+
+.pb1, .ptb1 {
+  padding-bottom: 6px;
+  padding-bottom: 0.6rem; }
+
+.mt2, .mtb2 {
+  margin-top: 12px;
+  margin-top: 1.2rem; }
+
+.mb2, .mtb2 {
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem; }
+
+.pt2, .ptb2 {
+  padding-top: 12px;
+  padding-top: 1.2rem; }
+
+.pb2, .ptb2 {
+  padding-bottom: 12px;
+  padding-bottom: 1.2rem; }
+
+.mt3, .mtb3 {
+  margin-top: 18px;
+  margin-top: 1.8rem; }
+
+.mb3, .mtb3 {
+  margin-bottom: 18px;
+  margin-bottom: 1.8rem; }
+
+.pt3, .ptb3 {
+  padding-top: 18px;
+  padding-top: 1.8rem; }
+
+.pb3, .ptb3 {
+  padding-bottom: 18px;
+  padding-bottom: 1.8rem; }
+
+.mt4, .mtb4 {
+  margin-top: 24px;
+  margin-top: 2.4rem; }
+
+.mb4, .mtb4 {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem; }
+
+.pt4, .ptb4 {
+  padding-top: 24px;
+  padding-top: 2.4rem; }
+
+.pb4, .ptb4 {
+  padding-bottom: 24px;
+  padding-bottom: 2.4rem; }
+
+.mt5, .mtb5 {
+  margin-top: 30px;
+  margin-top: 3rem; }
+
+.mb5, .mtb5 {
+  margin-bottom: 30px;
+  margin-bottom: 3rem; }
+
+.pt5, .ptb5 {
+  padding-top: 30px;
+  padding-top: 3rem; }
+
+.pb5, .ptb5 {
+  padding-bottom: 30px;
+  padding-bottom: 3rem; }
+
+.mt6, .mtb6 {
+  margin-top: 36px;
+  margin-top: 3.6rem; }
+
+.mb6, .mtb6 {
+  margin-bottom: 36px;
+  margin-bottom: 3.6rem; }
+
+.pt6, .ptb6 {
+  padding-top: 36px;
+  padding-top: 3.6rem; }
+
+.pb6, .ptb6 {
+  padding-bottom: 36px;
+  padding-bottom: 3.6rem; }
+
+.mt7, .mtb7 {
+  margin-top: 42px;
+  margin-top: 4.2rem; }
+
+.mb7, .mtb7 {
+  margin-bottom: 42px;
+  margin-bottom: 4.2rem; }
+
+.pt7, .ptb7 {
+  padding-top: 42px;
+  padding-top: 4.2rem; }
+
+.pb7, .ptb7 {
+  padding-bottom: 42px;
+  padding-bottom: 4.2rem; }
+
+.mt8, .mtb8 {
+  margin-top: 48px;
+  margin-top: 4.8rem; }
+
+.mb8, .mtb8 {
+  margin-bottom: 48px;
+  margin-bottom: 4.8rem; }
+
+.pt8, .ptb8 {
+  padding-top: 48px;
+  padding-top: 4.8rem; }
+
+.pb8, .ptb8 {
+  padding-bottom: 48px;
+  padding-bottom: 4.8rem; }
+
+.mt9, .mtb9 {
+  margin-top: 54px;
+  margin-top: 5.4rem; }
+
+.mb9, .mtb9 {
+  margin-bottom: 54px;
+  margin-bottom: 5.4rem; }
+
+.pt9, .ptb9 {
+  padding-top: 54px;
+  padding-top: 5.4rem; }
+
+.pb9, .ptb9 {
+  padding-bottom: 54px;
+  padding-bottom: 5.4rem; }
+
+.mt10, .mtb10 {
+  margin-top: 60px;
+  margin-top: 6rem; }
+
+.mb10, .mtb10 {
+  margin-bottom: 60px;
+  margin-bottom: 6rem; }
+
+.pt10, .ptb10 {
+  padding-top: 60px;
+  padding-top: 6rem; }
+
+.pb10, .ptb10 {
+  padding-bottom: 60px;
+  padding-bottom: 6rem; }
+
+.mt11, .mtb11 {
+  margin-top: 66px;
+  margin-top: 6.6rem; }
+
+.mb11, .mtb11 {
+  margin-bottom: 66px;
+  margin-bottom: 6.6rem; }
+
+.pt11, .ptb11 {
+  padding-top: 66px;
+  padding-top: 6.6rem; }
+
+.pb11, .ptb11 {
+  padding-bottom: 66px;
+  padding-bottom: 6.6rem; }
+
+.mt12, .mtb12 {
+  margin-top: 72px;
+  margin-top: 7.2rem; }
+
+.mb12, .mtb12 {
+  margin-bottom: 72px;
+  margin-bottom: 7.2rem; }
+
+.pt12, .ptb12 {
+  padding-top: 72px;
+  padding-top: 7.2rem; }
+
+.pb12, .ptb12 {
+  padding-bottom: 72px;
+  padding-bottom: 7.2rem; }
+
+.center-block, .centered {
+  margin-left: auto;
+  margin-right: auto; }
+
+.center-block {
+  width: 100%;
+  text-align: center; }
+
+.dismissable {
+  padding-right: 34px; }
+
+.attached--top {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.attached--bottom {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0; }
+
+.example {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 4px;
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px; }
+  .example .table h1, .example .table h2, .example .table h3, .example .table h4, .example .table h5, .example .table h6 {
+    margin-bottom: 0;
+    line-height: 1.1; }
+  .example .table td {
+    padding: 15px 0;
+    border-color: #eee;
+    vertical-align: middle; }
+  .example + h2 {
+    margin-top: 36px; }
+  .example:after {
+    content: "Example";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .example .message {
+    margin-bottom: 24px; }
+  .example .message.message--attached {
+    margin-bottom: 0; }
+
+.example .table tr:first-child td {
+  border-top: none; }
+
+.table .info {
+  color: #999;
+  vertical-align: middle;
+  margin: 0; }
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee; }
+  .page-header h1 {
+    padding-top: 80px;
+    margin-top: -45px; }
+
+.docs-section + .docs-section {
+  padding-top: 40px; }
+
+.js-is-closeable {
+  padding-right: 34px; }
+  .js-is-closeable .icon--close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit; }
+
 .lt-ie8 .title-group {
   float: left; }
 .lt-ie8 .navigation {
   float: left; }
 .lt-ie8 .site-nav {
   float: left; }
+  .lt-ie8 .site-nav > li > a {
+    width: 100%;
+    height: 100%; }
 .lt-ie8 .right-nav {
   float: right; }
 .lt-ie8 .nav > li {
   display: inline; }
+.lt-ie8 .nav li a:hover > .arrow-up {
+  display: block; }
+.lt-ie8 .nav li a:hover > .dropdown {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-height: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  /* Hover On */
+  -webkit-transition: max-height, padding 0.25s ease;
+  -moz-transition: max-height, padding 0.25s ease;
+  -ms-transition: max-height, padding 0.25s ease;
+  -o-transition: max-height, padding 0.25s ease;
+  transition: max-height, padding 0.25s ease; }
 
 .lt-ie9 #flyout {
   display: none; }
