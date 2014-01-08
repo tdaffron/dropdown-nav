@@ -1,0 +1,106 @@
+.bg-white{
+	position: absolute;
+	height: inherit;
+	background: #ffffff;
+	width: 100%;
+	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
+	
+}
+
+.navigation-wrapper{
+	position: relative;
+	//overflow: hidden;
+	height: 64px;
+	max-height: 100%;
+	z-index: 500;
+	@include vendor(box-shadow, none);
+	
+}
+
+.small-wrap{
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.title-group{
+	width: 89.09px;
+	
+	
+	a {
+		height: 55px;
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+		background: none transparent scroll repeat 0 0;
+		
+	}
+}
+
+		.site-logo {
+			width: 70px;
+			height: 55px;			
+			background-image: url("../images/cru-logo.svg");
+			background-repeat: no-repeat;
+			background-position: top center;
+			//background-size: contain;
+			margin: 0;
+		}
+
+
+.navigation{
+	display: inline-block;
+	float: none;
+	width: 89%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+	.right-nav{
+		float: right;
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+		width: 34%;
+	
+		& > li{
+			display: inline-block;
+			padding: 0;
+		}
+	}
+
+
+	.site-nav{
+		float: none;
+		margin-bottom: 0;
+		width: 66%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.topbar-toggle{
+		display: none;
+	}
+	
+.dropdown--column{
+	a{
+		display: inline-block;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 10px;
+		padding-left: 0;
+		margin-bottom: $base-spacing-unit / 2;
+		margin-bottom: rem-calc($base-spacing-unit) / 2;
+		text-align: center;	
+		background: #333333;
+		color: #ffffff;
+		border-radius: 3px;
+		
+		&:hover{
+			text-decoration: none;
+			background: lighten(#333333, 3%);
+		}
+	}
+}

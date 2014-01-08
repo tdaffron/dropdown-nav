@@ -1,0 +1,14 @@
+/* Default paragraph styles */
+p {
+	@include rem-font(1.6);
+	text-rendering: $paragraph-text-rendering;
+
+  	&.lead { @extend %lead; }
+
+	& aside {
+		@include rem-font(1.4);
+		line-height: $paragraph-aside-line-height;
+		font-style: $paragraph-aside-font-style;
+	}
+  
+}
