@@ -292,9 +292,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="assets/scripts/main.min.js"></script>
 
-<script>
-	$(".js-dropdown > ul").hover(
-	  function () {
+<!--<script>
+	$(".js-dropdown > ul").hover(function () {
 	    $(this).addClass('js-hover');
 	  }, 
 	  function () {
@@ -310,8 +309,31 @@
 	    $(this).removeClass('is-active');
 	  }
 	);
-</script>
+</script> -->
 
+<script>
+	$(".js-dropdown > ul").hover(
+	function () {
+		var $this = $(this);
+	    setTimeout(function () {$this.addClass('js-hover');}, 2000);
+	  }, 
+	  function () {
+	  var $this = $(this);
+	    setTimeout(function () {$this.removeClass('js-hover');}, 2000);
+	  }
+	);
+	
+	$(".js-dropdown > ul > li").hover(
+	  function () {
+	  var $this = $(this);
+	    setTimeout(function () {$this.addClass('is-active');}, 2000);
+	  }, 
+	  function () {
+	  var $this = $(this);
+	    setTimeout(function () {$this.removeClass('is-active');}, 2000);
+	  }
+	);
+</script>
 
 </body>
 </html>
