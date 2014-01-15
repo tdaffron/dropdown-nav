@@ -104,8 +104,8 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 }
-
-	.site-nav > li > a, .right-nav > li > a,  .topbar-toggle, .topbar-search{
+/*
+	.site-nav > li > a, .topbar-toggle, .topbar-search{
 		display: inline-block;
 		padding: 0 18px;
 		
@@ -128,11 +128,83 @@ body {
 		}
 	
 	}
+
+
+      .topbar-toggle, .topbar-search{
+        display: inline-block;
+        padding: 0 18px;
+
+        color: #3a3a3a;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 0.9px;
+
+        height: 64px;
+        line-height: 64px;
+        max-height: 100%;
+        vertical-align: middle;
+
+        @include vendor(transition, all 0.25s ease-in-out);
+
+        &:hover{
+          background-color: #f7f7f7;
+          color: $cru-gold;
+          text-decoration: none;
+        }
+
+      }
+*/
+    .site-nav > li > a{
+      display: inline-block;
+      padding: 0 18px;
+      color: #3a3a3a;
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 0.9px;
+
+      height: 64px;
+      line-height: 64px;
+      max-height: 100%;
+      vertical-align: middle;
+
+      @include vendor(transition, all 0.25s ease-in-out);
+
+      &:hover{
+        background-color: #f7f7f7;
+        color: $cru-gold;
+        text-decoration: none;
+      }
+
+    }
+
+    .right-nav > li > a {
+      display: inline-block;
+      padding: 0 18px;
+
+      color: #3a3a3a;
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 0.9px;
+
+      //height: 64px;
+      //line-height: 64px;
+      //max-height: 100%;
+      vertical-align: middle;
+
+      @include vendor(transition, all 0.25s ease-in-out);
+
+      &:hover{
+        background-color: #f7f7f7;
+        color: $cru-gold;
+        text-decoration: none;
+      }
+
+    }
 	
 	.right-nav > li > a{
 		font-weight: 400;
 	}
-
+/*
 	.right-nav{
 		float: right;
 		text-align: right;
@@ -151,7 +223,7 @@ body {
 			text-align: left;
 		}
 	}
-	
+
 		.right-nav > li > a{
 			display: inline-block;
 			font-size: 12px;
@@ -165,7 +237,7 @@ body {
 		display: inline-block;
 		vertical-align: middle;
 	}
-	
+*/
 	.topbar-toggle{
 		display: none;
 	}
@@ -321,6 +393,11 @@ body {
     }
 }
 
+.right-nav li.dropdown__item {
+  &:after {
+    display: none;
+  }
+}
 
 .js-close-button{
 	@media screen and (min-width: 61.25em){
